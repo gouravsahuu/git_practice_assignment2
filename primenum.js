@@ -3,6 +3,7 @@ let count_factors = 0;
 function checkPrime(number){
 
 for(let i=0;i<=number/2;i++){
+
    if(number%i == 0){
      count_factors++;
    }
@@ -22,6 +23,6 @@ if(result == true){
   console.log("Prime Number");
 }
 else{
-  console.log("Not a Prime Number, Try another one");
+  console.log("Not a Prime Number, Try another One");
 }
 

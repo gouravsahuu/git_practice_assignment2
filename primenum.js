@@ -1,17 +1,27 @@
-let factors = 0;
+let count_factors = 0;
 
-function primeornot(num){
+function checkPrime(number){
 
-for(let i=0;i<=num;i++){
-   if(num%i == 0){
-     factors++;
+for(let i=0;i<=number/2;i++){
+   if(number%i == 0){
+     count_factors++;
    }
 }
 
-if(factors == 2){
+if(count_factors == 1){
    return true;
    }
 else{
    return false;
    }
 }
+
+let result = checkPrime(13);
+
+if(result == true){
+  console.log("Prime Number");
+}
+else{
+  console.log("Not a Prime Number, Try another one");
+}
+
